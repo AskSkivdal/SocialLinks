@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social links</title>
+    <style>
+        html {
+            background-color: rgb(17, 19, 27);
+            display: grid;
+            height: 100vh;
+        }
+
+        body {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .container {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 50dvw;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .link-button {
+            background-color: rgb(49, 49, 63);
+            padding: 8px;
+            border-radius: 8px;
+            display: grid;
+        }
+
+        .link-button > img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% for link in socialLinks %}
+            <a href="{{ link.url }}" class="link-button" title="{{ link.title }}">
+                <img src="./icons/{{ link.icon }}" />
+            </a>
+        {% endfor %}
+    </div>
+</body>
+</html>
