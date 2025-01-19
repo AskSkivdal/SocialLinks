@@ -3,7 +3,13 @@ Host all your socials in one place.
 ![](./gitassets/image.png)
 
 
+## Supported social medias
+ - Bluesky
+ - Github
+ - Facebook
+ - Instagram
 
+If you have suggestions for a new social media create an issue
 
 
 ## The data
